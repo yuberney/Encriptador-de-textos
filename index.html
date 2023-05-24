@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
+    </head>
+<body>
+    <main>
+        <div>
+            <h2> ENCRIPTADOR DE TEXTOS </h2>
+        <img class="logo" src="img/logo.png" alt="" >
+        </div>
+        <section class="areaTexto">
+            <textarea class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto Aquí"></textarea>
+            <div class="terminos">
+                    <p> ❕ Solo letras minúsculas y sin acéntos </p>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                <button class="btn-nuevo" id="nuevo" type="button" title="Limpiar Textos" onclick="limpiar()"><img src="img/refrescar.png" alt="" ></button>
+            </div>
+        </section>
+        
+        <section class="areaMensaje">
+            <textarea class="mensaje" name="mensaje" id="mensaje" placeholder="Sin mensajes" readonly type="image"></textarea>
+            <div class="botones">
+                <button class="btn-copiar" id="copiar" type="button" title="Copiar" onclick="copiar()" >Copiar</button>
+            </div>
+        </section>
+    
+    </main>
+    <footer class="footer">
+        <p> Copyright © 2023 - Yuberney Muñoz</p>
+        <h3>Medellín - Colombia</h3>
+    </footer>
+    
+</body>
+
+</html>

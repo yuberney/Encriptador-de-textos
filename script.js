@@ -2,7 +2,7 @@
 
 function encriptar(){
     var texto = document.getElementById("texto").value;
-    var textoValido = /^[a-zA-z\s]+$/;
+    var textoValido = /^[a-zA-z\s]+$/; //se crea una variable con una expresion regular
     var textoEncriptado = texto
                             .replace(/e/gi, "enter")
                             .replace(/i/gi, "imes")
@@ -56,7 +56,7 @@ function desencriptar(){
         }else{
                 Swal.fire({ 
                     icon: 'success',
-                    text: 'Texto Encriptado con Exito',
+                    text: 'Texto Desencriptado con Exito',
                 })
                 document.getElementById("mensaje").value = textoDesencriptado;
                 document.getElementById("texto").value = "";

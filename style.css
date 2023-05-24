@@ -6,7 +6,7 @@
 main{
     width: 100vw;
     height: 100vh;
-    
+    background: linear-gradient(to top, #e6eaec, #2f4c53, #1f2c42);
 }
 
 h2{

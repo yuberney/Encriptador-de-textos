@@ -4,9 +4,9 @@ function encriptar(){
     var texto = document.getElementById("texto").value;
     var textoValido = /^[a-zA-z\s]+$/; //se crea una variable con una expresion regular
     var textoEncriptado = texto
-                            .replace(/a/gi, "ai")
                             .replace(/e/gi, "enter")
                             .replace(/i/gi, "imes")
+                            .replace(/a/gi, "ai")
                             .replace(/o/gi, "ober")
                             .replace(/u/gi, "ufat");
 

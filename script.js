@@ -4,11 +4,12 @@ function encriptar(){
     var texto = document.getElementById("texto").value;
     var textoValido = /^[a-zA-z\s]+$/; //se crea una variable con una expresion regular
     var textoEncriptado = texto
+                            .replace(/a/gi, "ai")
                             .replace(/e/gi, "enter")
                             .replace(/i/gi, "imes")
-                            .replace(/a/gi, "ai")
                             .replace(/o/gi, "ober")
                             .replace(/u/gi, "ufat");
+
     if (texto.length == "")  {
         Swal.fire({
             icon: 'error',
@@ -36,11 +37,11 @@ function desencriptar(){
     var texto = document.getElementById("texto").value;
     var textoValido = /^[a-zA-z\s]+$/;
     var textoDesencriptado = texto
-                            .replace(/enter/gi, "e")
-                            .replace(/imes/gi, "i")
-                            .replace(/ai/gi, "a")
-                            .replace(/ober/gi, "o")
-                            .replace(/ufat/gi, "u");
+                            .replace(/ai/img, "a")
+                            .replace(/enter/img, "e")
+                            .replace(/imes/img, "i")
+                            .replace(/ober/img, "o")
+                            .replace(/ufat/img, "u");
 
    if (texto.length == "")  {
         Swal.fire({

@@ -15,8 +15,50 @@ h2{
     left: 550px;
     color:#0A3871;
     padding-top: 30px;
-    
-    
+}
+
+.checkbox{
+    position: relative;
+    left: 1200px;
+    margin-top: 10px;
+    width: 40px;
+    height: 20px;
+    background-color:#434343;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.checkbox:checked{
+    background-color:rgb(23, 235, 23)
+}
+
+.checkbox::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color:#d8dfe8;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+
+.checkbox:checked::before{
+    transform: translateX(20px);
+}
+
+.dark-mode {
+    background-color:#252525;
+    .titulo{
+        color:white;
+    }
+
+   
 }
 
 .logo{

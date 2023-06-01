@@ -95,3 +95,14 @@ function copiar(){
     }
 
 }
+
+
+function enableDarkMode(){
+    var main_body = document.body;
+    var estado = event.target.checked;
+    main_body.classList.toggle("dark-mode")
+
+    if(estado == true){
+        button[copiar] = '<img class="logo" src="" alt="" >';
+    }
+}

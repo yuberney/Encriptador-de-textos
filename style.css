@@ -3,16 +3,17 @@
     padding: 0;
 }
 
-main{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to top, #e6eaec, #2f4c53, #1f2c42);
+body{
+    background: #4ca577;  /* fallback for old browsers */
+
+
 }
 
 h2{
+   
     position: absolute;
     left: 550px;
-    color:#e6eaec;
+    color:#0A3871;
     padding-top: 30px;
     
     
